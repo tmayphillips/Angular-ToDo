@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px black;
+    font: 1.5em 'PT Sans', sans-serif;
+}
+
+h1 {
+    font: 3em 'Corinthia', cursive;
+    margin: 10px;
+}
+
+.todoList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listItems {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.addTodo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.addTodo input {
+    font-weight: 700;
+}
+
+input {
+    border-width: 0;
+    text-align: left;
+    width: 320px;
+    font-weight: 700;
+}
+
+.addTodo input[type="text"]:focus  {
+    border-width: 2px;
+    border-color: #555555;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.list {
+    font-weight: 900;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 400px;
+    align-items: center;
+}
+
+li span {
+    font-size: smaller;
+    padding: 10px;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width: 25px;
+    height:25px;
+    background:aliceblue;;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+input[type='checkbox']:nth-child(even) {
+    background: lightblue;
+}
+
+input[type='checkbox']:checked {
+    -webkit-appearance:checkbox;
+    width: 25px;
+    height:25px;
+    background:aliceblue;;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+.addBtn {
+    background-color: white;
+    justify-self: flex-end;
+}
+
+.btnContainer {
+    display: flex;
+    justify-self: flex-end;
+}
+
+li:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
+li:last-child() {
+    justify-self: flex-end;
+}
+
+.clickableAwesomeFont {
+    cursor: pointer;
+}
+
+.clickableAwesomeFont:active {
+    color: gray;
+}
+
